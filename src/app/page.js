@@ -10,8 +10,8 @@ export default function Home() {
     <div className="flex flex-col items-center justify-between min-h-screen font-[family-name:var(--font-geist-sans)]">
       <Navbar />
       <Hero />
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Category />
+      <main className="flex flex-col m-[0px] p-[0px] w-full ">
+      <Category />
         <FeatureSection />
         <ProductContainer />
       </main>
