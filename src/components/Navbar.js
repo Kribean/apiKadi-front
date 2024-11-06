@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <div className="flex flex-row bg-base-100 w-full">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">ApiKadi</a>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">

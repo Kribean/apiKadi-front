@@ -4,7 +4,7 @@ const Category = ()=>{
 
     return(
 <div className="container">
-    <h2>Categories</h2>
+    <h2 className="text-3xl font-semibold">Categories</h2>
 <CarrousselCat/>
 </div>
     )

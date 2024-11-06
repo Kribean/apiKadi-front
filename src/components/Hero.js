@@ -9,7 +9,7 @@ const Hero = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn btn-white text-[#0B6434] rounded-none">Get Started</button>
+          <button className="btn btn-white text-[#0B6434] rounded-none">Learn more</button>
         </div>
         <img
           src="images/vegetable_hero.png"
