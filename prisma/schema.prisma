@@ -1,0 +1,48 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model product {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  nameArticle       String
+  isFruit           Boolean
+  is_sold_by_unit   Boolean
+  createdAt         Int
+  grocery           String
+  is_promotion_label Boolean 
+  raw_data          String
+  price_per_unit    String?
+  price_per_kilo    String?
+  lat               Float
+  long              Float
+  idMeteo           String   @db.ObjectId
+  meteo             meteo    @relation(fields: [idMeteo], references: [id])
+
+  @@index([idMeteo]) // Index pour faciliter les recherches par idMeteo
+}
+
+model meteo {
+  id                  String   @id @default(auto()) @map("_id") @db.ObjectId
+  temperature_Celcius Float?
+  city_name           String
+  temperature_felt    Float
+  description         String
+  humidity_percent    Float
+  precipitation_mm    Float
+  wind_speed_km_h     Float
+  wind_direction      String
+  uv_index            Float
+  createdAt           DateTime @default(now())
+  products            product[] // Relation one-to-many avec Product
+}
