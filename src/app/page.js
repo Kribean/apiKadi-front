@@ -22,13 +22,12 @@ export default async function Home() {
   }));
   return (
     <div className="flex flex-col items-center justify-between min-h-screen font-[family-name:var(--font-geist-sans)]">
-      {processedProducts?.map((e)=>{return <p>{e.nameArticle}</p>})}
       <Navbar />
       <Hero />
       <main className="flex flex-col m-[0px] p-[0px] w-full ">
       <Category />
         <FeatureSection />
-        <ProductContainer />
+        <ProductContainer products={products} />
       </main>
       <Footer />
     </div>
