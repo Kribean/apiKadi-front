@@ -4,12 +4,16 @@ import DateGeoBox from './DateGeoBox';
 import FilterShopBox from './FilterShopBox';
 import HeaderFilter from './HeaderFilter';
 import ProducBox from './ProducBox';
+import Image from 'next/image';
 
 function FilterCompo() {
   const [choiceFilter,setChoiceFilter]=useState(1)
   const [showFilter,setShowFilter]=useState(false)
   return (
     <div className="flex flex-col p-4 bg-slate-100">
+      <div className='flex flex-row gap-4 justify-center items-center w-fit '>
+      <p className='text-lg font-bold text-neutral'>Filtres </p><Image src={"/images/icon/filtericon.png"} width={32} height={32} alt='filtre'/>
+      </div>
       {showFilter&&<button className="btn btn-xs btn-neutral w-1/2" onClick={()=>{setShowFilter(false)}}>x Fermer filtre</button>}
       <div className="col-span-12 md:col-span-3 w-full max-md:max-w-md max-md:mx-auto">
         <div className='flex flex-row w-full block mb-4'>
