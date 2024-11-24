@@ -3,9 +3,9 @@ import FeatureSection from "@/components/FeatureSection";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import ProductContainer from "@/components/ProductContainer";
+import prisma from "@/lib/prisma";
 
 export default async function Home() {
-
     const products = await prisma.product.findMany({
       orderBy: {
         createdAt: 'desc', // Trie par date de création décroissante
