@@ -2,8 +2,7 @@ import CardCatego from "./CardCatego";
 
 const CarrousselCat = () => {
   const data = [
-    { srcImg: "images/legume_icon.png", altImg: "legume", title: "Légumes" },
-    { srcImg: "images/legume_icon.png", altImg: "legume", title: "Légumes" },
+    { srcImg: "images/legume_icon.png", altImg: "legume", title: "Fruits" },
     { srcImg: "images/legume_icon.png", altImg: "legume", title: "Légumes" },
   ];
   return (

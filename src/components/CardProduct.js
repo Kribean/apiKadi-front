@@ -22,7 +22,7 @@ const CardProduct = ({
   // Utilisation de toLocaleDateString pour formater la date
   const formattedDate = date.toLocaleDateString('fr-FR', options);
   return (
-<div className="flex flex-row lg:flex-col w-full lg:w-1/4 border border-[#0B6434] rounded-lg shadow-lg p-6 bg-white space-y-4">
+<div className="flex flex-row lg:flex-col w-full lg:w-1/3 border border-[#0B6434] rounded-lg shadow-lg p-6 bg-white space-y-4">
   <div className="flex flex-col items-center text-center space-y-3">
     <div className="avatar">
       <div className="w-24 h-24 rounded-full border-2 border-[#0B6434] overflow-hidden">

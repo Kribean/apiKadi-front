@@ -16,7 +16,7 @@ const dataImg=[
     {listUntitled:["lidl"],src:"logos_shop/lidl.png"},
     {listUntitled:["monoprix"],src:"logos_shop/monoprix-logo.jpg"},
     {listUntitled:["naturalia"],src:"logos_shop/naturalia.png"},
-    {listUntitled:["superu"],src:"logos_shop/superu.jpg"},
+    {listUntitled:["superu"],src:"logos_shop/superu.png"},
     {listUntitled:["grandfrais","grand_frais"],src:"logos_shop/grandfrais.png"},
 ]
 

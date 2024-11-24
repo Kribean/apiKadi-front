@@ -14,7 +14,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "ApiKadi",
-  description: "comparateur",
+  description: "Veille marketing continue sur les fruits et légumes",
 };
 
 export default function RootLayout({ children }) {
